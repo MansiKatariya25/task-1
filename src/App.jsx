@@ -1,17 +1,18 @@
-import { useState } from 'react'
-
+import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <>
-      
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="h-screen w-screen flex items-center justify-center bg-gray-900">
+      <div className="relative h-full w-full overflow-hidden">
+        <img
+          src="./image.jpg"
+          className="h-full w-full object-cover transition-transform duration-500 ease-in-out hover:scale-110"
+        />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
